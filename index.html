@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <header>
         <img src="./img/X.png" alt="X">
-        <a href="#">Login</a>
+        <a id="Login" href="#">Login</a>
         <img src="./img/I.png" alt="I">
-        <a href="#">Register</a>
+        <a id="Register" href="#">Register</a>
     </header>
     <section>
         <p>Enter your email and password to register.</p>
-        <div>
+        <div class="form">
             <input type="text" name="username" placeholder="Username">
             <input type="email" name="email" placeholder="Enter your email">
             <label><input type="password" name="password" placeholder="Password"><img src="./img/Hide.png" alt="Hide"></label>
@@ -26,9 +28,9 @@
             <p>Or register with</p>
             <img src="./img/Line.png" alt="Лінія">
         </div>
-        <div>
-            <label><img src="./img/google.svg" alt="Google"><button>Continue with Google</button></label>
-            <label><img src="./img/facebook.svg" alt="Facebook"><button>Continue with Facebook</button></label>
+        <div class="button-register">
+            <button><img src="./img/google.svg" alt="Google">Continue with Google</button>
+            <button><img src="./img/facebook.svg" alt="Facebook">Continue with Facebook</button>
         </div>
     </section>
     <footer>

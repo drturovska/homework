@@ -1,0 +1,59 @@
+body{
+    font-family: "Cera Pro";
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 16px;
+}
+p{
+    color: #3D3D3D;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.form input::placeholder {
+    color: #A5A5A5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+}
+.form button{
+    border-radius: 5px;
+    background: #46A358;
+    width: 300px;
+    height: 45px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    border-style: none;
+}
+.button-register button{
+    color: #727272;
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+}
+footer{
+    width: 500px;
+    height: 10px;
+    background: #46A358;
+}
+
