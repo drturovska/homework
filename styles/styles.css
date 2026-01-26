@@ -64,6 +64,7 @@ header.header{
     display: flex;
     justify-content: space-between;
     align-items: start;
+    border-bottom: 0.3px solid #46A35880;
 }
 
 menu.menu{
@@ -102,14 +103,14 @@ p.uppercase{
     font-family: "Cera Pro Medium";
     font-size: 14px;
     letter-spacing: 1.4px;
-    padding-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 h1.uppercase{
     color: #3D3D3D;
     font-family: "Cera Pro Black";
     font-size: 70px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .h1-highlight{
@@ -120,14 +121,13 @@ h1.uppercase{
     color: #727272;
     font-family: "Cera Pro Regular";
     font-size: 14px;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
+    width: 78%;
 }
 
 main.main{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 0px 7px 43px;
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
@@ -135,10 +135,14 @@ main.main{
     color: #FFF;
     background-color: #46A358;
     border-radius: 6px;
-    padding: 11px 27px 9px;
+    padding: 11px 27px;
 }
 
 .main-right {
     display: flex;
     justify-content: flex-end;
+}
+
+.main-left{
+    padding: 68px 40px 85px;
 }
