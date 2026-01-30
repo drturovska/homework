@@ -333,3 +333,156 @@ nav h1{
 .no-blend img {
     background: none;
 }
+
+.blog{
+    margin-top: 145px;
+}
+
+.blog-card{
+    display: flex;
+    gap: 28px;
+    margin-bottom: 138px;
+}
+
+.blog-card-item{
+    display: flex;
+    background: #FBFBFB;
+    align-items: center;;
+    height: 250px;
+}
+
+.blog-card-item article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 30px;    
+}
+
+.blog-card-item img{
+    background: url(<path-to-image>) lightgray -5px 0px / 101.742% 100% no-repeat;
+    mix-blend-mode: multiply;
+    position: relative;
+    height: 292px;
+    bottom: 24px;
+}
+
+.blog-card-item article h1{
+    color: #3D3D3D;
+    text-align: right;
+    font-family: "Cera Pro Black";
+    font-size: 18px;
+    margin: 0 0 9px 145px;
+}
+
+.blog-card-item article p{
+    color: #727272;
+    text-align: right;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.blog-card-item article button{
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 14px;
+    margin-left: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.blog-card-item article button svg{
+    margin-top: 2px;
+}
+
+.our-blog-header{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.our-blog-header h1{
+    margin-bottom: 15px;
+}
+
+.our-blog h1{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 30px;
+}
+
+.our-blog p{
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+}
+
+.our-blog-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-blog-item article{
+    display: flex;
+    flex-direction: column;
+    background: #FBFBFB;
+    width: 268px;
+    align-items: flex-start;
+}
+
+.our-blog-item p{
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px; 
+}
+
+.our-blog .our-blog-item article h1{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 20px;
+    margin-bottom: 4px;
+    line-height: 26px;
+}
+
+.our-blog-item article a{
+    color: #3D3D3D;
+    font-family: "Cera Pro Medium";
+    font-size: 14px;
+    margin-top: 9px;
+    display: flex;
+}
+
+.our-blog-item article img{
+    height: 195px;
+    width: 268px;
+}
+
+.our-blog-item article a svg{
+    fill: #3D3D3D;
+    margin-left: 3px;
+}
+
+.our-blog-item article a.active{
+    color: #46A358;
+}
+
+.our-blog-item article a.active svg{
+    fill: #46A358;
+}
+
+.our-blog .our-blog-item article div{
+    display: flex;
+    flex-direction: column;
+    margin: 9px 11px 12px 14px;
+}
+
+p.data{
+    color: #46A358;
+    font-family: "Cera Pro Medium";
+    font-size: 14px;
+    margin-bottom: 4px;
+}
