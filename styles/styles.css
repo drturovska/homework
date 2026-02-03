@@ -486,3 +486,137 @@ p.data{
     font-size: 14px;
     margin-bottom: 4px;
 }
+ 
+/*  */
+
+.header-reg{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.header-reg a{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 20px;
+    font-family: "Cera Pro Medium";
+}
+
+.header-reg .active{
+    color: #46A358;
+}
+
+.section-reg p{
+    color: #3D3D3D;
+    font-size: 13px;
+    font-family: "Cera Pro Regular";
+    padding-bottom: 14px;
+    
+}
+
+.form{
+    display: flex;
+    gap: 16px;
+}
+
+.form input::placeholder {
+    color: #A5A5A5;
+    font-size: 14px;
+    font-family: "Cera Pro Regular";
+}
+
+.form input{
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    padding: 12px 0 12px 14px;
+}
+
+.form button{
+    border-radius: 5px;
+    background: #46A358;
+    color: #FFF;
+    font-size: 16px;
+    font-family: "Cera Pro Bold";
+    border-style: none;
+    margin: 25px 0 36px 0;
+    padding: 15px 119px;
+}
+
+.button-reg button{
+    color: #727272;
+    font-family: "Cera Pro Medium";
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    background-color: #FFF;
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.registration{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reg{
+    margin: 50px 100px;
+}
+
+.section-reg .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.line-reg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 27px;
+}
+
+.line-reg .line {
+    flex: 1;
+    border-top: 1px solid #EAEAEA;
+    margin: 0 auto 12px;
+}
+
+.button-reg{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reg-X{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.password{
+    position: relative;
+}
+
+.password input {
+    width: 245px;
+    padding-right: 40px;
+}
+
+.password img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-reg{
+    background-color: #46A358;
+    height: 10px;
+}
