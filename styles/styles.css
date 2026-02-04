@@ -64,7 +64,6 @@
     font-style: normal;
 }
 
-
 div.container{
     padding: 30px 120px 52px;
     display: flex;
@@ -159,6 +158,9 @@ main.main{
     padding: 68px 40px 85px;
 }
 
+.menu-categories{
+    padding: 0 12px;
+}
 
 .menu-categories-item.active{
     color: #46A358;
@@ -170,9 +172,9 @@ main.main{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
-    padding-left: 12px;
+    /* padding-left: 12px; */
     line-height: 40px;
-    padding-top: 7px;
+    margin-top: 7px;
 }
 
 .nav-menu{
@@ -180,6 +182,7 @@ main.main{
     justify-content: space-between;
     align-items: baseline;
     font-family: "Cera Pro Regular";
+    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -224,26 +227,20 @@ li.menu-plants-item{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 70px;
-}
-
-.catalog-item{
-    width: 258px;
-    height: 350px;
+    margin-bottom: 90px;
 }
 
 .catalog-img{
-    width: 258px;
-    height: 300px;
     background: #FBFBFB;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 12px;
+    height: 300px;
 }
 
 .catalog-img img{
     width: 250px;
-    height: 250px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     mix-blend-mode: multiply;
 }
@@ -268,8 +265,6 @@ li.menu-plants-item{
 }
 
 .nav-item{
-    width: 35px;
-    height: 35px;
     border-radius: 4px;
     color: #3D3D3D;
     font-family: "Cera Pro Light";
@@ -277,27 +272,29 @@ li.menu-plants-item{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
     border: 1px solid #E5E5E5;
+    width: 35px;
+    height: 35px;
+    background: #FFF;
 }
 
 .nav-item.active{
     background: #46A358;
     color: #FFF;
     font-family: "Cera Pro Bold";
-    font-size: 18px;
     border-color: transparent;
 }
 
-nav{
-    margin: 14px 0 0 18px;
+.sidebar nav{
+    margin-bottom: 366px;
+    padding: 14px 18px;
 }
 
 nav h1{
     color: #3D3D3D;
     font-family: "Cera Pro Bold";
     font-size: 18px;
-    padding-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .plants{
@@ -310,24 +307,17 @@ nav h1{
     background: #FBFBFB;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-right: 50px;
-    width: 310px;
 }
 
 .plants-main {
     display: flex;
-    margin-bottom: 90px;
+    gap: 50px;
+    align-items: flex-start;
 }
 
 .nav{
     display: flex;
     justify-content: flex-end;
-}
-
-.sidebar img {
-    width: 370px;
-    margin-left: -29px;
 }
 
 .no-blend img {
@@ -351,7 +341,7 @@ nav h1{
     height: 250px;
 }
 
-.blog-card-item article{
+.blog-card-item div{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -366,7 +356,7 @@ nav h1{
     bottom: 24px;
 }
 
-.blog-card-item article h1{
+.blog-card-item div h1{
     color: #3D3D3D;
     text-align: right;
     font-family: "Cera Pro Black";
@@ -374,7 +364,7 @@ nav h1{
     margin: 0 0 9px 145px;
 }
 
-.blog-card-item article p{
+.blog-card-item div p{
     color: #727272;
     text-align: right;
     font-family: "Cera Pro Regular";
@@ -383,7 +373,7 @@ nav h1{
     margin-bottom: 25px;
 }
 
-.blog-card-item article button{
+.blog-card-item div button{
     border-radius: 6px;
     background: #46A358;
     color: #FFF;
@@ -395,7 +385,7 @@ nav h1{
 }
 
 
-.blog-card-item article button svg{
+.blog-card-item div button svg{
     margin-top: 2px;
 }
 
@@ -425,7 +415,7 @@ nav h1{
     justify-content: space-between;
 }
 
-.our-blog-item article{
+.our-blog-item div{
     display: flex;
     flex-direction: column;
     background: #FBFBFB;
@@ -440,7 +430,7 @@ nav h1{
     line-height: 22px; 
 }
 
-.our-blog .our-blog-item article h1{
+.our-blog .our-blog-item div h1{
     color: #3D3D3D;
     font-family: "Cera Pro Bold";
     font-size: 20px;
@@ -448,7 +438,7 @@ nav h1{
     line-height: 26px;
 }
 
-.our-blog-item article a{
+.our-blog-item div a{
     color: #3D3D3D;
     font-family: "Cera Pro Medium";
     font-size: 14px;
@@ -456,25 +446,25 @@ nav h1{
     display: flex;
 }
 
-.our-blog-item article img{
+.our-blog-item div img{
     height: 195px;
     width: 268px;
 }
 
-.our-blog-item article a svg{
+.our-blog-item div a svg{
     fill: #3D3D3D;
     margin-left: 3px;
 }
 
-.our-blog-item article a.active{
+.our-blog-item div a.active{
     color: #46A358;
 }
 
-.our-blog-item article a.active svg{
+.our-blog-item div a.active svg{
     fill: #46A358;
 }
 
-.our-blog .our-blog-item article div{
+.our-blog .our-blog-item div div{
     display: flex;
     flex-direction: column;
     margin: 9px 11px 12px 14px;
@@ -487,7 +477,7 @@ p.data{
     margin-bottom: 4px;
 }
  
-/*  */
+/* registration */
 
 .header-reg{
     margin-bottom: 40px;
