@@ -237,6 +237,47 @@ li.menu-plants-item{
     align-items: center;
     margin-bottom: 12px;
     height: 300px;
+    position: relative;
+}
+
+.catalog-sale{
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    background-color: #46A358;
+    padding: 7px 8px;
+}
+
+.catalog-sale span{
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 16px;
+}
+
+.catalog-active{
+    position: absolute;
+    bottom: 7px;
+    visibility: hidden;
+    display: flex;
+    gap: 26px;
+}
+
+.catalog-active button{
+    background-color: transparent;
+    padding: 8px 0;
+}
+
+.catalog-active button svg path {
+    fill: #3D3D3D;
+}
+
+.catalog-active button:hover svg path {
+    fill: #46A358;
+}
+
+.catalog-item:hover .catalog-active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .catalog-img img{
@@ -245,10 +286,30 @@ li.menu-plants-item{
     mix-blend-mode: multiply;
 }
 
+.catalog-item{
+    border-top: 1px solid;
+    color: transparent;
+    position: relative;
+}
+
+.catalog-item:hover{
+    border-top: 1px solid #46A358;
+}
+
 .catalog-item a{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 16px;
+}
+
+.catalog-item .sale{
+    color: #A5A5A5;
+    font-family: "Cera Pro Regular";
+    font-size: 18px;
+    text-decoration: line-through;
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
 }
 
 .catalog-item p.price{
