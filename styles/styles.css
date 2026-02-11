@@ -65,7 +65,7 @@
 }
 
 div.container{
-    padding: 30px 120px 52px;
+    padding: 30px 120px 13px;
     display: flex;
     flex-direction: column;
 }
@@ -490,7 +490,7 @@ nav h1{
     display: flex;
     flex-direction: column;
     background: #FBFBFB;
-    width: 242px;
+    width: 270px;
     align-items: flex-start;
 }
 
@@ -539,6 +539,7 @@ nav h1{
     display: flex;
     flex-direction: column;
     padding: 9px 14px;
+    width: 240px;
 }
 
 p.data{
@@ -710,9 +711,9 @@ p.data{
 .menu-list > li > ul{
     position: absolute;
     top: -95px;
-    left: 190px;
+    left: 187px;
     display: none;
-    background-color: #EDF6EE;
+    padding-left: 4px;
 }
 
 .menu-list > li:hover > ul{
@@ -755,4 +756,216 @@ p.data{
     border-color: #46A358;
     font-family: "Cera Pro Bold";
     cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 100px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    background: #FBFBFB;
+    padding: 25px 23px;
+    gap: 83px;
+}
+
+.footer-top-border{
+    border-right: 1px solid #46A3581A;
+    border-left: 1px solid #46A3581A;
+}
+
+.footer-top-promo{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-top-promo-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 26px;
+}
+
+.footer-top-promo-item h1{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 17px;
+    padding-bottom: 9px;
+}
+
+.footer-top-promo-item p{
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    width: 204px;
+}
+
+.footer-top-promo-item img{
+    height: 93px;
+    width: 83px;
+    padding-bottom: 15px;
+}
+
+.footer-top-join h1{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    padding-top: 12px;
+}
+
+.footer-top-join p{
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 13px;
+}
+
+.footer-top-join form{
+    display: flex;
+    padding: 18px 0 18px 0;
+}
+
+.footer-top-join form input{
+    padding: 12px 86px 12px 12px;
+}
+
+.footer-top-join form input::placeholder{
+    color: #ACACAC;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+}
+
+.footer-top-join form button{
+    color: #FFF;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+    background-color: #46A358;
+    padding: 12px 25px;
+    border-radius: 0 6px 6px 0;
+}
+
+.footer-contact{
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+    padding: 27px 23px;
+}
+
+.footer-contact-item span{
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer-contact-content{
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+.footer-contact-content svg{
+    padding-right: 27px;
+    flex-shrink: 0;
+}
+
+.footer-contact-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 205px;
+}
+
+.footer-contact-content .footer-contact-item svg{
+    padding-right: 0;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    background: #FBFBFB;
+    border-bottom: 1px solid #46A35833;
+    padding: 33px 155px 30px 23px;
+}
+
+.footer-links h1{
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 18px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 163px;
+}
+
+.nav-links-item-account{
+    padding-right: 30px;
+}
+
+.nav-links-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links-item h1{
+    padding-bottom: 8px;
+}
+
+.nav-links-item li{
+    padding: 8px 0;
+}
+
+.nav-links-item a{
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+}
+
+.footer-links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.footer-links-social h1{
+    padding-bottom: 20px;
+}
+
+.footer-links-social-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-links-social-btn button{
+    padding: 8px 8px;
+    background-color: #FBFBFB;
+    border: 1px solid #46A35833;
+    border-radius: 6px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-links-pay h1{
+    padding-bottom: 13px;
+}
+
+.footer-links-pay img{
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.footer-copyright{
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-copyright span{
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
 }
