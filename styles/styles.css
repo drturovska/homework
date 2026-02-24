@@ -64,6 +64,104 @@
     font-style: normal;
 }
 
+/* svg */
+
+
+
+#icon-logo{
+    width: 150px;
+    height: 34.3px;
+}
+
+#arrow-left{
+    width: 10px;
+    height: 10px;
+}
+
+#icon-logout{
+    width: 20px;
+    height: 20px;
+    fill: transparent;
+}
+
+#basket{
+    width: 20px;
+    height: 20px;
+}
+
+#basket:hover{
+    fill: #46A358;
+}
+
+#heart{
+    width: 20px;
+    height: 20px;
+}
+
+#heart:hover{
+    fill: #46A358;
+}
+
+#search{
+    width: 20px;
+    height: 20px;
+}
+
+#search:hover{
+    fill: #46A358;
+}
+
+#arrow-right{
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
+
+#pointer{
+    width: 18px;
+    height: 18px;
+    fill: #46A358;
+}
+
+#pointer-mini{
+    width: 16px;
+    height: 16px;
+}
+
+#address, #mail ,#phone{
+    width: 20px;
+    height: 20px;
+    fill: transparent;
+}
+
+#facebook{
+    width: 8px;
+    height: 16px;
+}
+
+#instagram, #linkedin{
+    width: 16px;
+    height: 16px;
+}
+
+#twitter{
+    width: 16px;
+    height: 13px;
+}
+
+#youtube{
+    width: 19px;
+    height: 14px;
+}
+
+.our-blog-item > div > div > a:hover {
+    color: #46A358;
+}
+
+.our-blog-item > div > div > a:hover svg {
+    fill: #46A358;
+}
+
 div.container{
     padding: 30px 120px 13px;
     display: flex;
@@ -104,6 +202,14 @@ li.menu-item.active{
     gap: 4px;
     color: #FFF;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.header-btn:hover{
+    transition: background-color 0.3s;
+    transition: 0.3s ease;
+    background-color: #3c864b;
+    transform: scale(1.05);
 }
 
 .uppercase{
@@ -149,6 +255,20 @@ main.main{
     border-radius: 6px;
     padding: 11px 27px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button:hover{
+    transition: background-color 0.3s;
+    transition: 0.3s ease;
+    background-color: #3c864b;
+    transform: scale(1.05);
+}
+
+.header-btn a{
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 16px;
 }
 
 .main-right {
@@ -271,6 +391,12 @@ li.menu-plants-item{
     padding: 8px 8px;
     cursor: pointer;
     border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.catalog-active button:hover{
+    transition: 0.3s ease;
+    transform: scale(1.08);
 }
 
 .catalog-active button svg path {
@@ -281,10 +407,18 @@ li.menu-plants-item{
     fill: #46A358;
 }
 
+
+
+.catalog-item:hover{
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
 .catalog-item:hover .catalog-active {
     opacity: 1;
     visibility: visible;
 }
+
 
 .catalog-img img{
     width: 250px;
@@ -296,6 +430,7 @@ li.menu-plants-item{
     border-top: 1px solid;
     color: transparent;
     position: relative;
+    transition: 0.3s ease;
 }
 
 .catalog-item:hover{
@@ -333,6 +468,10 @@ li.menu-plants-item{
 
 .nav-ul li button{
     cursor: pointer;
+}
+
+.nav-ul li button:hover{
+    font-family: "Cera Pro Bold";
 }
 
 .nav-item{
@@ -410,6 +549,12 @@ nav h1{
     background: #FBFBFB;
     align-items: center;;
     height: 250px;
+    transition: 0.3s ease;
+}
+
+.blog-card-item:hover{
+    transition: 0.3s ease;
+    transform: scale(1.05);
 }
 
 .blog-card-item div{
@@ -454,6 +599,14 @@ nav h1{
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.blog-card-item div button:hover{
+    transition: background-color 0.3s;
+    transition: 0.3s ease;
+    background-color: #3c864b;
+    transform: scale(1.05);
 }
 
 .blog-card-item div button svg{
@@ -486,12 +639,18 @@ nav h1{
     justify-content: space-between;
 }
 
-.our-blog-item div{
+.our-blog-item > div{
     display: flex;
     flex-direction: column;
     background: #FBFBFB;
     width: 270px;
     align-items: flex-start;
+    transition: 0.3s ease;
+}
+
+.our-blog-item > div:hover{
+    transition: 0.3s ease;
+    transform: scale(1.05);
 }
 
 .our-blog-item p{
@@ -569,6 +728,7 @@ p.data{
     color: #46A358;
 }
 
+
 .section-reg p{
     color: #3D3D3D;
     font-size: 13px;
@@ -579,6 +739,7 @@ p.data{
 
 .form-reg{
     display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -603,6 +764,7 @@ p.data{
     border-style: none;
     margin: 25px 0 36px 0;
     padding: 15px 119px;
+    cursor: pointer;
 }
 
 .button-reg button{
@@ -617,19 +779,21 @@ p.data{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 .registration{
-    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 500px;
 }
 
 .reg{
-    margin: 50px 100px;
+    padding: 50px 100px;
+   
 }
 
 .section-reg .form{
@@ -660,6 +824,7 @@ p.data{
     position: absolute;
     top: 13px;
     right: 13px;
+    cursor: pointer;
 }
 
 .password{
@@ -676,11 +841,13 @@ p.data{
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .footer-reg{
     background-color: #46A358;
     height: 10px;
+    width: 100%;
 }
 
 /* menu */
@@ -700,6 +867,11 @@ p.data{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 16px;
+    transition: color 0.1s ease;
+}
+
+.menu-list a:hover{
+    color: #46A358;
 }
 
 .menu-list > li{
@@ -752,24 +924,27 @@ p.data{
     fill: #fff;
 }
 
+.menu-active li{
+    transition: font-weight 0.3s, opacity 0.3s;
+}
+
 .menu-active li:hover{
-    border-color: #46A358;
     font-family: "Cera Pro Bold";
     cursor: pointer;
+    opacity: 0.9;  
 }
 
 /* Footer */
 
-footer{
+.footer-index{
     margin-top: 100px;
 }
 
 .footer-top{
     display: flex;
-    justify-content: space-between;
     background: #FBFBFB;
     padding: 25px 23px;
-    gap: 83px;
+    gap: 150px;
 }
 
 .footer-top-border{
@@ -785,7 +960,22 @@ footer{
 .footer-top-promo-item{
     display: flex;
     flex-direction: column;
-    padding: 0px 26px;
+}
+
+.footer-contact-item-2{
+    padding-right: 95px;
+}
+
+.footer-top-promo-item-1{
+    padding-right: 34px;
+}
+
+.footer-top-promo-item-2{
+    padding: 0 27px;
+}
+
+.footer-top-promo-item-3{
+    padding-left: 15px;
 }
 
 .footer-top-promo-item h1{
@@ -824,6 +1014,12 @@ footer{
 .footer-top-join form{
     display: flex;
     padding: 18px 0 18px 0;
+    transition: 0.3s ease;
+}
+
+.footer-top-join form:hover{
+    transition: background-color 0.3s;
+    transition: 0.3s ease;
 }
 
 .footer-top-join form input{
@@ -843,6 +1039,11 @@ footer{
     background-color: #46A358;
     padding: 12px 25px;
     border-radius: 0 6px 6px 0;
+    transition: 0.3s ease;
+}
+
+.footer-top-join form button:hover{
+    background-color: #3c864b;
 }
 
 .footer-contact{
@@ -860,11 +1061,11 @@ footer{
 .footer-contact-content{
     display: flex;
     align-items: center;
-    gap: 85px;
+    gap: 50px;
 }
 
 .footer-contact-content svg{
-    padding-right: 27px;
+    padding-right: 47px;
     flex-shrink: 0;
 }
 
@@ -881,10 +1082,10 @@ footer{
 
 .footer-links{
     display: flex;
-    justify-content: space-between;
+    gap: 260px;
     background: #FBFBFB;
     border-bottom: 1px solid #46A35833;
-    padding: 33px 155px 30px 23px;
+    padding: 33px 0 30px 23px;
 }
 
 .footer-links h1{
@@ -895,11 +1096,11 @@ footer{
 
 .nav-links{
     display: flex;
-    gap: 163px;
+    gap: 128px;
 }
 
 .nav-links-item-account{
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .nav-links-item{
@@ -919,6 +1120,11 @@ footer{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 14px;
+    transition: color 0.1s ease;
+}
+
+.nav-links-item a:hover{
+    color: #46A358;
 }
 
 .footer-links-container{
