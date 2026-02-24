@@ -38,12 +38,27 @@
                 </li>
                 <li class="menu-item">Blogs</li>
             </menu>
-            <button class="header-btn">
-                <svg id="icon-logout">
-                    <use href="./img/sprite.svg#icon-logout"></use>
-                </svg>
-                <a href="./registration.html">Login</a>
-            </button>
+            <div class="header-actionsbtn">
+                <div class="header-actions">
+                    <button class="icon-btn">
+                        <svg id="search">
+                            <use href="./img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                    <button class="icon-btn cart-btn">
+                        <svg id="bascket">
+                            <use href="./img/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="cart-count">6</span>
+                    </button>
+                </div>
+                <button class="header-btn">
+                    <svg id="icon-logout">
+                        <use href="./img/sprite.svg#icon-logout"></use>
+                    </svg>
+                    <a href="./registration.html">Login</a>
+                </button>
+            </div>
         </header>
         <main class="main">
             <div class="main-left">
@@ -68,17 +83,86 @@
             <div class="plants-main">
                 <aside class="sidebar">
                     <nav>
-                        <h1>Categories</h1>
                         <menu class="menu-categories">
-                            <li class="menu-categories-item active">House Plants</li>
-                            <li class="menu-categories-item">Potter Plants</li>
-                            <li class="menu-categories-item">Seeds</li>
-                            <li class="menu-categories-item">Small Plants</li>
-                            <li class="menu-categories-item">Big Plants</li>
-                            <li class="menu-categories-item">Succulents</li>
-                            <li class="menu-categories-item">Trerrariums</li>
-                            <li class="menu-categories-item">Gardening</li>
-                            <li class="menu-categories-item">Accessories</li>
+                            <h1 class="sidebar-h">Categories</h1>
+                            <div>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(33)</span>
+                                    <span class="custom-check-text">House Plants</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(12)</span>
+                                    <span class="custom-check-text">Potter Plants</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(65)</span>
+                                    <span class="custom-check-text">Seeds</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(39)</span>
+                                    <span class="custom-check-text">Small Plants</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(23)</span>
+                                    <span class="custom-check-text">Big Plants</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(17)</span>
+                                    <span class="custom-check-text">Succulents</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(19)</span>
+                                    <span class="custom-check-text">Trerrariums</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(13)</span>
+                                    <span class="custom-check-text">Gardening</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(18)</span>
+                                    <span class="custom-check-text">Accessories</span>
+                                </label>
+                            </div>
+                        </menu>
+                        <menu class="price-range">
+                            <h1 class="sidebar-h">Price Range</h1>
+                            <div>
+                                <input type="range" id="volume" name="volume" min="0" max="100" value="5">
+                                <label for="volume">
+                                    <span class="price-range-price">Price:</span>
+                                    <span class="price-range-numbers">$39 - $1230</span>
+                                </label>
+                                <button>Filter</button>
+                            </div>
+                        </menu>
+                        <menu class="size">
+                            <h1 class="sidebar-h">Size</h1>
+                            <div>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(119)</span>
+                                    <span class="custom-check-text">Small</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(86)</span>
+                                    <span class="custom-check-text">Medium</span>
+                                </label>
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="check">
+                                    <span class="custom-check-number">(78)</span>
+                                    <span class="custom-check-text">Large</span>
+                                </label>
+                            </div>
                         </menu>
                     </nav>
                     <img src="./img/PlantSale.png" alt="Super Sale">

@@ -66,8 +66,6 @@
 
 /* svg */
 
-
-
 #icon-logo{
     width: 150px;
     height: 34.3px;
@@ -78,57 +76,22 @@
     height: 10px;
 }
 
-#icon-logout{
+#basket, #heart, #search{
     width: 20px;
     height: 20px;
+}
+
+#basket:hover, #heart:hover, #search:hover{
+    fill: #46A358;
+}
+
+#arrow-right, #pointe{
+    width: 18px;
+    height: 18px;
     fill: transparent;
 }
 
-#basket{
-    width: 20px;
-    height: 20px;
-}
-
-#basket:hover{
-    fill: #46A358;
-}
-
-#heart{
-    width: 20px;
-    height: 20px;
-}
-
-#heart:hover{
-    fill: #46A358;
-}
-
-#search{
-    width: 20px;
-    height: 20px;
-}
-
-#search:hover{
-    fill: #46A358;
-}
-
-#arrow-right{
-    width: 18px;
-    height: 18px;
-    fill: #fff;
-}
-
-#pointer{
-    width: 18px;
-    height: 18px;
-    fill: #46A358;
-}
-
-#pointer-mini{
-    width: 16px;
-    height: 16px;
-}
-
-#address, #mail ,#phone{
+#address, #mail ,#phone, #icon-logout{
     width: 20px;
     height: 20px;
     fill: transparent;
@@ -139,7 +102,7 @@
     height: 16px;
 }
 
-#instagram, #linkedin{
+#instagram, #linkedin, #pointer-mini{
     width: 16px;
     height: 16px;
 }
@@ -191,6 +154,46 @@ li.menu-item{
 li.menu-item.active{
     border-color: #46A358;
     font-family: "Cera Pro Bold";
+}
+
+.header-actions{
+    gap: 22px;
+}
+
+.header-actionsbtn{
+    display: flex;
+    gap: 35px;
+    align-items: baseline;
+}
+
+.icon-btn{
+    position: relative;
+}
+
+.cart-count{
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    background: #46A358;
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+}
+
+.header-actions .icon-btn{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-actions .icon-btn svg{
+    width: 20px;
+    height: 20px;
 }
 
 .header-btn{
@@ -280,23 +283,97 @@ main.main{
     padding: 68px 40px 85px;
 }
 
-.menu-categories{
-    padding: 0 12px;
+.sidebar > nav > menu > div{
+    padding-left: 12px;
 }
 
-.menu-categories-item.active{
-    color: #46A358;
-    font-family: "Cera Pro Bold";
-    font-size: 15px;
+.menu-categories .sidebar-h{
+    margin-bottom: 7px;
 }
 
-.menu-categories-item{
+/* checkbox */
+
+.custom-checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 15px;
     line-height: 40px;
     margin-top: 7px;
     cursor: pointer;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .custom-check-number,
+.custom-checkbox input:checked ~ .custom-check-text {
+    color: #46A358;
+    font-family: "Cera Pro Bold";
+}
+
+.price-range{
+    display: flex;
+    flex-direction: column;
+    margin: 36px 0 46px 0;
+}
+
+.price-range div{
+    display: flex;
+    flex-direction: column;
+}
+
+.price-range .sidebar-h{
+    padding-bottom: 20px;
+}
+
+.price-range input{
+    width: 209px;
+}
+
+.price-range label{
+    padding: 15px 0;
+}
+
+.price-range-price{
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+}
+
+.price-range-numbers{
+    color: #46A358;
+    font-family: "Cera Pro Bold";
+    font-size: 15px;
+}
+
+.price-range button{
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Bold";
+    font-size: 16px;
+    padding: 7px 25px;
+    width: 90px;
+    transition: 0.3s ease;
+}
+
+.price-range button:hover{
+    background-color: #3c864b;
+    transform: scale(1.05);
+}
+
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  border: 1px solid #333;
+  cursor: pointer;
 }
 
 .nav-menu{
@@ -310,13 +387,11 @@ main.main{
 
 .menu-plants{
     display: flex;
-    flex-direction: row;
     gap: 37px;
 }
 
 .nav-menu-sort{
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -496,15 +571,13 @@ li.menu-plants-item{
 }
 
 .sidebar nav{
-    margin-bottom: 366px;
     padding: 14px 18px;
 }
 
-nav h1{
+.sidebar-h{
     color: #3D3D3D;
     font-family: "Cera Pro Bold";
     font-size: 18px;
-    margin-bottom: 7px;
 }
 
 .plants{
@@ -611,6 +684,9 @@ nav h1{
 
 .blog-card-item div button svg{
     margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    fill: transparent;
 }
 
 .our-blog-header{
@@ -1174,4 +1250,36 @@ p.data{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 14px;
+}
+
+/* preloader */
+
+.preloader::after{
+    position: absolute;
+    top: 0;
+    bottom: 4%;
+    right: 0;
+    left: 0;
+    content: " ";
+    display: block;
+    margin: auto;
+    height: 32px;
+    width: 32px;
+    border: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    border-top-color: #46A358;
+    border-bottom-color: #65c578;
+    border-right-color: #65c578;
+    border-left-color: #65c578;
+    animation: rotating 1.1s linear infinite;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
