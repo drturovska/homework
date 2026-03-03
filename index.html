@@ -13,51 +13,56 @@
             <svg id="icon-logo">
                 <use href="./img/sprite.svg#icon-logo"></use>
             </svg>
-            <menu class="menu menu-active">
-                <li class="menu-item active">Home</li>
-                <li class="menu-item">Shop</li>
-                <li class="menu-item">Plant Care
-                    <ul class="menu-list first-menu">
-                        <li><a href="#">Drainage</a></li>
-                        <li><a href="#">Fungicides</a></li>
-                        <li><a href="#">Fertilizer</a></li>
-                        <li class="menu-list-active"><a href="#">Priming</a>
-                            <svg id="arrow-left">
-                                <use href="./img/sprite.svg#arrow-left"></use>
+            <div class="menu-actionsbtn">
+                <menu class="menu menu-active">
+                    <li class="menu-item active">Home</li>
+                    <li class="menu-item">Shop</li>
+                    <li class="menu-item">Plant Care
+                        <ul class="menu-list first-menu">
+                            <li><a href="#">Drainage</a></li>
+                            <li><a href="#">Fungicides</a></li>
+                            <li><a href="#">Fertilizer</a></li>
+                            <li class="menu-list-active"><a href="#">Priming</a>
+                                <svg id="arrow-left">
+                                    <use href="./img/sprite.svg#arrow-left"></use>
+                                </svg>
+                                <ul class="menu-list second-menu">
+                                    <li><a href="#">Universal</a></li>
+                                    <li><a href="#">For Ficus</a></li>
+                                    <li><a href="#">For Cacti</a></li>
+                                    <li><a href="#">For Citrus</a></li>
+                                    <li><a href="#">For those in bloom</a></li>
+                                    <li><a href="#">For Orchids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">Blogs</li>
+                </menu>
+                <div class="header-actionsbtn">
+                    <svg id="icon-logo">
+                        <use href="./img/sprite.svg#icon-logo"></use>
+                    </svg>
+                    <div class="header-actions">
+                        <button class="icon-btn search-btn">
+                            <svg id="search">
+                                <use href="./img/sprite.svg#search"></use>
                             </svg>
-                            <ul class="menu-list second-menu">
-                                <li><a href="#">Universal</a></li>
-                                <li><a href="#">For Ficus</a></li>
-                                <li><a href="#">For Cacti</a></li>
-                                <li><a href="#">For Citrus</a></li>
-                                <li><a href="#">For those in bloom</a></li>
-                                <li><a href="#">For Orchids</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item">Blogs</li>
-            </menu>
-            <div class="header-actionsbtn">
-                <div class="header-actions">
-                    <button class="icon-btn">
-                        <svg id="search">
-                            <use href="./img/sprite.svg#search"></use>
+                        </button>
+                        <button class="icon-btn cart-btn">
+                            <svg id="bascket">
+                                <use href="./img/sprite.svg#basket"></use>
+                            </svg>
+                            <span class="cart-count">6</span>
+                        </button>
+                    </div>
+                    <button class="header-btn">
+                        <svg id="icon-logout">
+                            <use href="./img/sprite.svg#icon-logout"></use>
                         </svg>
-                    </button>
-                    <button class="icon-btn cart-btn">
-                        <svg id="bascket">
-                            <use href="./img/sprite.svg#basket"></use>
-                        </svg>
-                        <span class="cart-count">6</span>
+                        <a href="./registration.html">Login</a>
                     </button>
                 </div>
-                <button class="header-btn">
-                    <svg id="icon-logout">
-                        <use href="./img/sprite.svg#icon-logout"></use>
-                    </svg>
-                    <a href="./registration.html">Login</a>
-                </button>
             </div>
         </header>
         <main class="main">
@@ -81,7 +86,7 @@
         </main>
         <section class="plants">
             <div class="plants-main">
-                <aside class="sidebar">
+                <aside class="sidebar" id="sidebar">
                     <nav>
                         <menu class="menu-categories">
                             <h1 class="sidebar-h">Categories</h1>
@@ -169,6 +174,12 @@
                 </aside>
                 <div class="content">
                     <nav class="nav-menu">
+                        <button class="filters-btn" aria-expanded="false" aria-controls="sidebar" title="Open filters">
+                            <svg class="menu-icon" viewBox="0 0 100 80" width="40" height="40" aria-hidden="true">
+                              <line class="line top" x1="10" y1="25" x2="90" y2="25" />
+                              <line class="line bottom" x1="10" y1="55" x2="90" y2="55" />
+                            </svg>
+                        </button>
                         <menu class="menu-plants">
                             <li class="menu-plants-item active">All Plants</li>
                             <li class="menu-plants-item">New Arrivals</li>
@@ -241,10 +252,12 @@
                             <a>
                                 Angel Wing Begonia
                             </a>
-                            <p class="price">
-                                $169.00
-                            </p>
-                            <span class="sale">$194.00</span>
+                            <div class="price-sale">
+                                <p class="price">
+                                    $169.00
+                                </p>
+                                <span class="sale">$194.00</span>
+                            </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-img">
@@ -357,10 +370,12 @@
                             <a>
                                 Aluminum Plant
                             </a>
-                            <p class="price">
-                                $179.00
-                            </p>
-                            <span class="sale">$229.00</span>
+                            <div class="price-sale">
+                                <p class="price">
+                                    $179.00
+                                </p>
+                                <span class="sale">$229.00</span>
+                            </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-img">
@@ -389,10 +404,12 @@
                             <a>
                                 Bird's Nest Fern
                             </a>
-                            <p class="price">
-                                $99.00
-                            </p>
-                            <span class="sale">$109.00</span>   
+                            <div class="price-sale">
+                                <p class="price">
+                                    $99.00
+                                </p>
+                                <span class="sale">$109.00</span>   
+                            </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-img">
@@ -597,11 +614,13 @@
                     </div>
                 </div>
                 <div class="footer-top-join">
-                    <h1>Would you like to join newsletters?</h1>
-                    <form>
-                        <input type="email" name="email" placeholder="enter your email address...">
-                        <button type="submit">Join</button>
-                    </form>
+                    <div class="footer-top-join-form">
+                        <h1>Would you like to join newsletters?</h1>
+                        <form>
+                            <input type="email" name="email" placeholder="enter your email address...">
+                            <button type="submit">Join</button>
+                        </form>
+                    </div>
                     <p>
                         We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! 
                     </p>
@@ -612,29 +631,31 @@
                     <svg id="icon-logo">
                         <use href="./img/sprite.svg#icon-logo"></use>
                     </svg> 
-                    <div class="footer-contact-item footer-contact-item-1">
-                        <svg id="address">
-                            <use href="./img/sprite.svg#address"></use>
-                        </svg>
-                        <span>
-                            70 West Buckingham Ave. Farmingdale, NY 11735
-                        </span>
-                    </div>
-                    <div class="footer-contact-item footer-contact-item-2">
-                        <svg id="mail">
-                            <use href="./img/sprite.svg#mail"></use>
-                        </svg> 
-                        <span>
-                            contact@greenshop.com
-                        </span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <svg id="phone">
-                            <use href="./img/sprite.svg#phone"></use>
-                        </svg> 
-                        <span>
-                            +88 01911 717 490
-                        </span>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item footer-contact-item-1">
+                            <svg id="address">
+                                <use href="./img/sprite.svg#address"></use>
+                            </svg>
+                            <span>
+                                70 West Buckingham Ave. Farmingdale, NY 11735
+                            </span>
+                        </div>
+                        <div class="footer-contact-item footer-contact-item-2">
+                            <svg id="mail">
+                                <use href="./img/sprite.svg#mail"></use>
+                            </svg> 
+                            <span>
+                                contact@greenshop.com
+                            </span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg id="phone">
+                                <use href="./img/sprite.svg#phone"></use>
+                            </svg> 
+                            <span>
+                                +88 01911 717 490
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -660,7 +681,7 @@
                             <li><a href="#">How to Return</a></li>
                         </ul>
                     </div>
-                    <div class="nav-links-item">
+                    <div class="nav-links-item nav-links-item-categories">
                         <h1>Categories</h1>
                         <ul>
                             <li><a href="#">House Plants</a></li>
@@ -713,5 +734,69 @@
             </div>
         </footer>
     </div>
+            <script>
+                (function(){
+                    const btn = document.querySelector('.filters-btn');
+                    const sidebar = document.getElementById('sidebar');
+                    const plantsMain = document.querySelector('.plants-main');
+                    if(!btn || !sidebar || !plantsMain) return;
+                    // ensure this button doesn't act as a submit button
+                    btn.setAttribute('type','button');
+
+                    function applyAbsolutePosition(){
+                        // make plantsMain a positioned ancestor and position the sidebar inside it
+                        plantsMain.style.position = 'relative';
+                        sidebar.classList.add('absolute');
+                    }
+
+                    function clearAbsolutePosition(){
+                        plantsMain.style.position = '';
+                        sidebar.classList.remove('absolute');
+                    }
+
+                    function closeSidebar(){
+                        sidebar.classList.remove('open');
+                        btn.setAttribute('aria-expanded','false');
+                        plantsMain.classList.remove('sidebar-open');
+                        clearAbsolutePosition();
+                    }
+
+                    btn.addEventListener('click', function(e){
+                        e.preventDefault();
+                        e.stopPropagation();
+                        const isOpen = sidebar.classList.toggle('open');
+                        btn.setAttribute('aria-expanded', isOpen);
+                        // reflect open state on plantsMain so we can hide the button via CSS
+                        plantsMain.classList.toggle('sidebar-open', isOpen);
+                        if(isOpen){
+                            applyAbsolutePosition();
+                            // ensure start of plantsMain is visible
+                            window.scrollTo(0, plantsMain.getBoundingClientRect().top + window.scrollY);
+                        } else {
+                            clearAbsolutePosition();
+                        }
+                    });
+
+                    // Close the sidebar when clicking anywhere outside of it
+                    document.addEventListener('click', function(e){
+                        if(sidebar.classList.contains('open')){
+                            if(!sidebar.contains(e.target) && !btn.contains(e.target)){
+                                closeSidebar();
+                            }
+                        }
+                    });
+
+                    document.addEventListener('keydown', function(e){
+                        if(e.key === 'Escape' && sidebar.classList.contains('open')){
+                            closeSidebar();
+                        }
+                    });
+
+                    // Recompute position on resize to keep it aligned
+                    window.addEventListener('resize', function(){
+                        if(sidebar.classList.contains('open')) applyFixedPosition();
+                    });
+                })();
+            </script>
 </body>
 </html>
